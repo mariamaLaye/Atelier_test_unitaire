@@ -187,7 +187,7 @@ public class TextToHtml {
                     "<th>Identifiant</th> " +
                     "<th>Nom</th> " +
                     "<th>Prénom</th> " +
-                    "<th>Fiche détaillé</th>" + 
+                    "<th>Fiche détaillée</th>" + 
                     "</tr> " +
                     "%s" +
                     "</table> " +
