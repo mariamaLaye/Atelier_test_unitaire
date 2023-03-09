@@ -31,6 +31,7 @@ pipeline {
                  git 'https://github.com/mariamaLaye/maven-1.git'
                 
                 bat "mvn -Dmaven.test.failure.ignore=true test package"
+            }
         }
         stage('deploy') {
             steps {
@@ -39,7 +40,6 @@ pipeline {
                 
                 bat "mvn -Dmaven.test.failure.ignore=true deploy package"
             }
-        }
         }
     }
 }
