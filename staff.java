@@ -79,7 +79,7 @@ public class staff {
 				fileIn.close();
 				fileOut.close();
 			} catch (FileNotFoundException e) {
-				System.out.println("File not founded");
+				System.out.println("File not found");
 			}
 		}
 
