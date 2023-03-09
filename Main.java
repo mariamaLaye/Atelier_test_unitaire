@@ -76,7 +76,7 @@ public class Main {
 				fileIn.close();
 				fileOut.close();
 			} catch (FileNotFoundException e) {
-				System.out.println("File not found");
+				System.out.println("File not founded");
 			}
 		}
 
