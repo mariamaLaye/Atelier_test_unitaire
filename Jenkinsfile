@@ -25,6 +25,22 @@ pipeline {
                 bat "mvn -Dmaven.test.failure.ignore=true compile package"
             }
         }
+        stage('test') {
+            steps {
+                 // To run Maven on a Windows agent, use
+                 git 'https://github.com/mariamaLaye/maven-1.git'
+                
+                bat "mvn -Dmaven.test.failure.ignore=true test package"
+            }
+            stage('deploy') {
+            steps {
+                 // To run Maven on a Windows agent, use
+                 git 'https://github.com/mariamaLaye/maven-1.git'
+                
+                bat "mvn -Dmaven.test.failure.ignore=true deploy package"
+            }
+        }
+        }
     }
 }
 
